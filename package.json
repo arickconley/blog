@@ -1,0 +1,14 @@
+{
+  "name": "arickio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Arick Conley <me@arick.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  }
+}

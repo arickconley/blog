@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+      <pre>
+        ▄▄▄       ██▀███   ██▓ ▄████▄   ██ ▄█▀
+        ▒████▄    ▓██ ▒ ██▒▓██▒▒██▀ ▀█   ██▄█▒ 
+        ▒██  ▀█▄  ▓██ ░▄█ ▒▒██▒▒▓█    ▄ ▓███▄░ 
+        ░██▄▄▄▄██ ▒██▀▀█▄  ░██░▒▓▓▄ ▄██▒▓██ █▄ 
+         ▓█   ▓██▒░██▓ ▒██▒░██░▒ ▓███▀ ░▒██▒ █▄
+         ▒▒   ▓▒█░░ ▒▓ ░▒▓░░▓  ░ ░▒ ▒  ░▒ ▒▒ ▓▒
+          ▒   ▒▒ ░  ░▒ ░ ▒░ ▒ ░  ░  ▒   ░ ░▒ ▒░
+          ░   ▒     ░░   ░  ▒ ░░        ░ ░░ ░ 
+              ░  ░   ░      ░  ░ ░      ░  ░   
+                               ░               
+      </pre>
+      <p>
+        <span class="highlight">arick@arick.io</span>:<span class="tag">/root</span
+        ><span>$ <span class="attribute">cd</span> ~/
+      </p>
+      <p>
+        <span class="highlight">arick@arick.io</span>:<span class="tag">~/</span
+        ><span>$ <span class="attribute">cat</span> profile.md
+      </p>
+      <p>
+        I've been sitting behind a computer for more than half my life, mashing buttons in an attempt to learn
+        a little about everything that interests me. I'll occasionally leave notes about those adventures for anyone to read.
+      </p>
+      <p>-Arick</p>
+      <p>
+        <span class="highlight">arick@arick.io</span>:<span class="tag">~/</span
+        ><span>$ <span class="attribute">ls</span> blog
+      </p>
+      <div class="ls">
+        {%- for post in collections.posts -%}
+          <a href="{{post.url | url}}">{{ post.fileSlug }}</a>
+        {%- endfor -%}
+          
+      </div>
